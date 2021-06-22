@@ -41,7 +41,7 @@ module.exports = {
                 const appoin = await appointment.findById(mongoose.mongo.ObjectId(id))
                 if (appoin){
                 const doct = await user.findById(mongoose.mongo.ObjectId(appoin.doctor))
-                const data = {time: appoin.time,doctor:doct.name}
+                const data = {time: appoin.time,doctor:doct.name, cancleStatus: appoin.cancle}
                 resp.push(data)}
             }
             res.json(resp)

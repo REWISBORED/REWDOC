@@ -1,3 +1,7 @@
+## Requirements
+
+1. Node
+
 ## Setup of project
  
 To setup the project follow the following steps:
